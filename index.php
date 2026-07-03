@@ -15,6 +15,8 @@ $maiorPreco = mysqli_fetch_assoc($resultMaiorPreco);
 $sqlMaiorSalario = "SELECT MAX(Salario) AS maior_salario FROM funcionarios";
 $resultMaiorSalario = mysqli_query($conexao, $sqlMaiorSalario);
 $maiorSalario = mysqli_fetch_assoc($resultMaiorSalario);
+
+include './componentes/header.php';
 ?>
 <main class="container">
 <section class="hero">
