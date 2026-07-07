@@ -17,14 +17,10 @@ $sql = "SELECT
  WHERE produtos.Nome LIKE '%$busca%'
  ORDER BY produtos.Nome ASC";
 $resultado = mysqli_query($conexao, $sql);
+
+include_once './componentes/header.php';
 ?>
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Produtos</title>
-</form>
+
 <section class="grid-produtos">
 <?php while ($produto = mysqli_fetch_assoc($resultado)) { ?>
 <article class="card-produto">
@@ -39,5 +35,3 @@ $resultado = mysqli_query($conexao, $sql);
 </section>
 </main>
 <?php include "componentes/footer.php"; ?>
-</body>
-</html>

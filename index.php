@@ -45,3 +45,4 @@ include './componentes/header.php';
 <strong>R$ <?php echo number_format($maiorSalario["maior_salario"], 2, ",", "."); ?></strong>
 </article>
 </section>
+<?php include "./componentes/footer.php"; ?>

@@ -15,10 +15,9 @@ $sql = "SELECT
  ON funcionarios.SetorID = setor.SetorID
  ORDER BY funcionarios.Nome ASC";
 $resultado = mysqli_query($conexao, $sql);
+
+include "./componentes/header.php";
 ?>
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
 <div class="tabela-container">
 <table class="tabela-dados">
 <thead>
@@ -42,3 +41,6 @@ $resultado = mysqli_query($conexao, $sql);
 <td>R$ <?php echo number_format($funcionario["Salario"], 2, ",", "."); ?></td>
 </tr>
 <?php } ?>
+<?php
+include "./componentes/footer.php";
+?>

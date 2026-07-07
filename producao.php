@@ -16,10 +16,12 @@ $sql = "SELECT
  ON producao.ClienteID = clientes.ClienteID
  ORDER BY producao.DataProducao DESC";
 $resultado = mysqli_query($conexao, $sql);
+include "./componentes/header.php";
+
 ?>
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
+<table>
+<thead>
+<tr>
 <th>Produto</th>
 <th>Funcionário</th>
 <th>Cliente</th>

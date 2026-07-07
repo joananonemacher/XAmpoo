@@ -11,6 +11,7 @@ $sql = "SELECT
  FROM clientes
  ORDER BY Empresa ASC";
 $resultado = mysqli_query($conexao, $sql);
+include "./componentes/header.php";
 ?>
 <h1>Clientes</h1>
 <p>Consulta simples de clientes cadastrados no banco de dados.</p>
@@ -38,3 +39,9 @@ $resultado = mysqli_query($conexao, $sql);
 <td><?php echo $cliente["Telefone"]; ?></td>
 <td><?php echo $cliente["Cidade"]; ?></td>
 <td><?php echo $cliente["Estado"]; ?></td>
+</tr>
+<?php
+}
+include "./componentes/footer.php";
+
+?>
