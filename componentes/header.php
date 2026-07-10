@@ -34,3 +34,4 @@ href="funcionarios.php">Funcionários</a>
 <a class="<?php echo $paginaAtual == 'producao.php' ? 'ativo' : ''; ?>" href="producao.php">Produção</a>
 </nav>
 </aside>
+<main class="container">

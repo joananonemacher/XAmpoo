@@ -18,7 +18,6 @@ $maiorSalario = mysqli_fetch_assoc($resultMaiorSalario);
 
 include './componentes/header.php';
 ?>
-<main class="container">
 <section class="hero">
 <h1>Painel Empresarial PHP e MySQL</h1>
 <p>Dashboard de consulta criado com SELECT, PHP, HTML e CSS.</p>

@@ -51,4 +51,4 @@ echo date("d/m/Y", strtotime($item["DataEntrega"]));
 </tbody>
 </table>
 </div>
-</main>
+<?php include './componentes/footer.php';?>

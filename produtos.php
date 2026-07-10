@@ -28,7 +28,7 @@ include_once './componentes/header.php';
 <h2><?php echo $produto["Produto"]; ?></h2>
 <p>Referência: <?php echo $produto["Referencia"]; ?></p>
 <p>Peso: <?php echo $produto["Peso"]; ?> kg</p>
-<strong>R$ <?php echo number_format($produto["Preco"], 2, ",", "."); ?></strong>
+<p><strong>R$ <?php echo number_format($produto["Preco"], 2, ",", "."); ?></strong></p>
 <a class="botao" href="produto-detalhe.php?id=<?php echo $produto["ProdutoID"]; ?>">Ver detalhe</a>
 </article>
 <?php } ?>

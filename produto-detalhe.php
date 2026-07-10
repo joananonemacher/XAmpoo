@@ -18,10 +18,13 @@ $sql = "SELECT
  WHERE produtos.ProdutoID = $id";
 $resultado = mysqli_query($conexao, $sql);
 $produto = mysqli_fetch_assoc($resultado);
+
+include './componentes/header.php';
 ?>
 <section class="detalhe-produto">
 <div class="icone-produto">PE</div>
 <div>
+<?php if( mysqli_num_rows($resultado) > 0  ){ ?>
 <span><?php echo $produto["Categoria"]; ?></span>
 <h1><?php echo $produto["Produto"]; ?></h1>
 <p>Referência: <?php echo $produto["Referencia"]; ?></p>
